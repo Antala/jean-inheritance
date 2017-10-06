@@ -1,6 +1,6 @@
 {
   "name": "jean-inheritance",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides functionality for inheriting constructor and prototype values and methods",
   "main": "dist/jean-inheritance.js",
   "scripts": {
