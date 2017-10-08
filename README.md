@@ -41,7 +41,7 @@ require(["path/to/Inheritance"], function(Inheritance){
 
 ## API Reference
 
-### Inheritance.inheritConstructor(testator, instance, options) 
+### inheritConstructor(testator, instance, options) 
 
 Inherits constructor values
 
