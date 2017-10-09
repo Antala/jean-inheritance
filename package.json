@@ -1,6 +1,6 @@
 {
   "name": "jean-inheritance",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Provides functionality for inheriting constructor and prototype values and methods",
   "main": "dist/jean-inheritance.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "jean-amd": "1.0.1",
-    "jean-type-check": "0.0.6"
+    "jean-type-check": "1.0.2"
   },
   "repository": {
     "type": "git",
