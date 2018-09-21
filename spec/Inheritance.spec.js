@@ -11,6 +11,26 @@ define([
                 expect(Inheritance.inheritConstructor).not.toBeUndefined();
                 expect(Inheritance.inheritPrototype).not.toBeUndefined();
             });
+            it("instanceof tests passes", function(){
+                var Testator = (function () {
+                    var Testator = function () { };
+                    Testator.prototype.MethodOne = function () { };
+                    Testator.prototype.MethodTwo = function () { };
+                    Testator.prototype.MethodThree = function () { };
+                    return Testator;
+                })(),
+                Inheritor = (function () {
+                    var Inheritor = function () {
+
+                    };
+                    Inheritance.inheritPrototype(Inheritor, Testator);
+                    Inheritor.prototype.a = function(){};
+                    Inheritor.prototype.b = function(){};
+                    return Inheritor;
+                })();
+                var i = new Inheritor();
+                expect(i instanceof Testator).toBe(true);
+            })
         });
         describe("Inheritance.inheritConstructor", function () {
             var Testator, Inheritor;
